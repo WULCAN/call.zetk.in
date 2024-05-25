@@ -1,0 +1,13 @@
+projects:
+  - path: .
+    messages:
+      format: yaml
+      path: locale
+    translations:
+      path: locale
+    languages:
+      - da
+      - de
+      - nn
+      - sv
+
