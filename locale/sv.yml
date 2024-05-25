@@ -1,0 +1,405 @@
+campaignForm:
+  action:
+    noLocation: Ingen helt fysisk plats.
+    booked: Bokad
+    button:
+      signUp: Anmäl
+      undoSignUp: Ångra anmälan
+    currentNeed: Fler aktivister behövs här
+    infoButton: Info
+    multiLocationLabel: |
+      {count, plural,
+          =2 {På två platser}
+          =3 {På tre platser}
+          =4 {På fyra platser}
+          =5 {På fem platser}
+          other {På # platser}
+      }
+  calendar:
+    weekDays:
+      friday: F
+      monday: M
+      saturday: L
+      sunday: S
+      thursday: T
+      tuesday: T
+      wednesday: O
+  filter:
+    activity:
+      active:
+        p: Filtrerar aktioner på aktivitet
+        button: Visa alla aktioner
+      inactive:
+        p: Visar alla aktioner oavsett aktivitet
+        button: Filtrera på aktivitet
+      modal:
+        clearButton: Visa alla aktiviteter
+    modal:
+      title: Filtrera på aktivitet
+      closeButton: Filtrera
+      toggleActionCount: |
+        {count, plural,
+            =1 {En aktion}
+            other {# aktioner}
+        }
+    showNeed:
+      button:
+        show: Visa mig var jag behövs
+        hide: Visa alla aktioner
+      p: |
+        Just nu behövs det fler aktivister på {count, plural,
+            =1 {en aktion}
+            other {# aktioner}
+        }.
+  message:
+    showNeed:
+      p: |
+        På {count, plural,
+            =1 {den här aktionen}
+            other {de här aktionerna}
+        } behövs fler aktivister just nu. Om du inte hittar någon som
+        passar kan du så klart ändå gå tillbaka och anmäla dig till något
+        annat.
+      title: Du behövs här!
+    yourActions:
+      p: |
+        Här håller du koll på var du ska vara framöver. Om
+        du nyligen anmält dig kan du ångra din anmälan, men
+        när du blivit inbokad måste du kontakta din organisation
+        om du behöver ställa in.
+      title: Dina aktuella aktioner
+controlBar:
+  assignmentsButton: Visa alla uppdrag
+  callButton: Starta samtal
+  endButton: Sluta ringa
+  finishCallButton: Slutför & rapportera
+  instructions:
+    prepare: Förbered dig inför samtalet.
+  nextCallButton: Fortsätt ringa
+  skipButton: Hoppa över
+  startButton: Börja ringa
+  submitReportButton: Skicka rapport
+  targetInfo:
+    lastFailure: Senast sökt {date}
+    lastNever: Aldrig ringd förut
+    lastSuccessful: Senast nådd {date}
+header:
+  dashboardLink: Min sida
+  user:
+    logout: Logga ut
+    settings: Inställningar
+misc:
+  callLog:
+    emptyLabel: Aldrig ringd
+    note: Ringaren skrev ingen anteckning
+    summary:
+      status0: Samtalet har inte slutförts.
+      status1: Vi nådde {target}.
+      status11: '{target} svarade inte.'
+      status12: Linjen var upptagen.
+      status13: '{target} bad oss ringa efter {date}.'
+      status14: '{target} var inte tillgänglig. Ring efter {date}.'
+      status15: Vi lämnade meddelande på telefonsvarare.
+      status21: Vi hade fel nummer.
+      status22: Samtalet bröts.
+  tagList:
+    emptyLabel: Inga etiketter
+  callInstructions:
+    instructions: |-
+      Tryck på numret ovan för att ringa, eller knappa in det manuellt i din
+      telefon. När du trycker på numret öppnas din telefonapp. Återvänd hit
+      till webbläsaren för att fortsätta använda Zetkin.
+overlays:
+  laneOverview:
+    lanes:
+      h: Pågående samtal
+      ops:
+        discard: Överge samtalet
+        switch: Växla över till detta samtal
+      p: |-
+        Här är samtal du redan har igång. Du bör slutföra samtalen
+        eller överge dem så att andra kan ringa samma personer.
+    log:
+      filterPlaceholder: Skriv namn för att filtrera
+      h: Dina tidigare samtal
+      ops:
+        repeat: Logga nytt samtal med {target}
+        switch: Växla till pågående samtal med {target}
+      p: Du kan starta nya samtal med personer du ringt tidigare.
+  resume:
+    h: Du har oavslutade samtal
+    ops:
+      discard: Överge samtalet med {target}
+      resume: Återuppta samtal med {target}
+    p: |-
+      Vid ett tidigare ringtillfälle har du fått samtal tilldelade dig
+      som du ännu inte rapporterat in.
+  skip:
+    h: Hoppa över samtal
+    p: Vill du hoppa över {target} och ringa någon annan istället?
+    resumeButton: Nej, återuppta samtalet
+    skipButton: Ja, hoppa över {target}
+pages:
+  assignments:
+    h1: Dina uppdrag
+    intro: |-
+      Du har {numAssignments, plural, =1 {ett uppdrag} other {# uppdrag}} som du
+      kan ringa på.
+    isPendingIntro: Ett ögonblick, vi hämtar dina uppdrag
+    noAssignmentsIntro: |-
+      Du har inga ringuppdrag. Kontakta en organisatör i din organisation om du
+      vill ringa.
+    notLoading: >-
+      Dina uppdrag bör laddas inom några sekunder. Om inget händer kan det bero
+
+      på att du har en inkompatibel webbläsare. Använd helst Chrome eller Firefox.
+    startCalling: Välj uppdrag och börja ringa
+  call:
+    tabs:
+      instructions: Instruktioner
+      target: Personinfo
+      input: Agera som {target}
+      report: Rapport
+      stats: Bra jobbat
+  end:
+    assignmentsButton: Fortsätt ringa
+    dashboardButton: Gå till Min sida
+    h: Tack för att du ringde
+    p: Ditt arbete är viktigt för att bygga din organisation starkare.
+  landing:
+    h1: Välkommen
+    intro: |-
+      Detta är Zetkins ringgränssnitt. För att kunna ringa måste du vara
+      inloggad.
+    loginButton: Logga in
+  notFound:
+    assignmentsButton: Välj ett ringuppdrag
+    dashboardButton: Gå till Min sida
+    h1: Sidan finns inte
+    p: |-
+      Du har försökt surfa in på en sida som inte existerar i Zetkin Call,
+      kanske för att du klickat på en felaktig länk.
+panes:
+  input:
+    h1: Agera som { target }
+    summary:
+      campaigns:
+        actions: '{count} aktioner'
+        bookings: |-
+          {numBookings, plural,
+              =0 {inga bokningar}
+              =1 {en bokning}
+              other {# bokningar}
+          }
+        h2: Aktuella kampanjer
+        respondButton: Anmäl
+        responses: |-
+          {numResponses, plural,
+              =0 {inga anmälningar}
+              =1 {en anmälan}
+              other {# anmälningar}
+          }
+        status: '{target} har'
+      surveys:
+        h2: Enkäter
+        respondButton: Svara
+    summaryLabel: Sammanfattning
+    summaryLink: Sammanfattning
+  instructions:
+    h1: Instruktioner
+    targetButton: Visa personinfo
+  queueEmpty:
+    assignmentsLink: Välj ett annat uppdrag
+    h1: Slut på personer att ringa!
+    p: |-
+      Just nu finns det inga fler personer i kön. Om en stund kan det hända
+      att fler släpps på, men för tillfället kan du inte ringa mer på det
+      här uppdraget.
+  report:
+    backLink: Gå tillbaka
+    h:
+      report: Rapportera in samtal
+      reported: Samtal rapporterat
+  stats:
+    h1: Bra jobbat!
+    p: |
+      Din insats är viktig för att bygga din organisation
+      starkare. Här är en sammanfattning av hur det går.
+  target:
+    activityHeader: Tidigare aktivitet
+    activityLabel: >-
+      {count, plural,
+          =0 {{target} har aldrig deltagit i några aktioner.}
+          =1 {{target} har delagit i en aktion, {lastAction}.}
+          other {{target} har deltagit i {count} aktioner. Den senaste var {lastAction}.}
+      }
+    activityLastAction: '{activity} ({location}) {date}'
+    callLogHeader: Tidigare påringningar till {target}
+    editHeader: Redigera informationen?
+    editInfo: |-
+      Om något här behöver ändras, skriv ett meddelande till en funktionär
+      i rapporten efter samtalet.
+    h1: Personinfo
+    instructionsButton: Visa instruktioner
+    tagHeader: Etiketter
+report:
+  steps:
+    callBack:
+      effect:
+        asap: '{target} placeras sist i ringkön.'
+        other: '{target} plockas automatiskt bort ur ringkön så länge.'
+      examples:
+        nextWeek: Nästa vecka
+        today: Senare idag
+        tomorrow: I morgon
+      examplesLabel: Exempel
+      question: När ska vi ringa tillbaka?
+      submitButton: Ring tidigast { date }
+      summary: Vi ringer tillbaka tidigast { date }
+      timeOfDay:
+        any: När som helst på dagen
+        after: Tidigast { hour }:00
+    callerLog:
+      disabled: Anteckningar är avstängda i det här ringuppdraget.
+      effect:
+        leftLog: 'Framtida ringare kommer att se din anteckning:'
+      options:
+        saveWithLog: Spara anteckning
+        saveWithoutLog: Spara utan anteckning
+      question: Vill du lämna en anteckning till framtida ringare?
+      summary:
+        emptyLog: Du skrev ingen anteckning till framtida ringare.
+        leftLog: Du skrev en anteckning till framtida ringare.
+    failureMessage:
+      effect:
+        leftMessage: Framtida ringare kommer att se att du lämnat ett meddelande.
+      options:
+        leftMessage: Ja
+        noMessage: Nej
+      question: Lämnade du ett meddelande på telefonsvararen?
+      summary:
+        leftMessage: Du lämnade ett meddelande.
+        noMessage: Du lämnade inget meddelande.
+    failureReason:
+      options:
+        lineBusy: Upptaget
+        noPickup: Inget svar / telefonsvarare
+        notAvailable: Inte tillgänglig just nu
+        wrongNumber: Fel nummer
+      question: Varför inte?
+      summary:
+        lineBusy: Det var upptaget.
+        noPickup: '{target} svarade inte.'
+        notAvailable: '{target} var inte tillgänglig just nu.'
+        wrongNumber: Vi hade fel nummer till {target}.
+    organizerAction:
+      effect:
+        actionNeeded: En organisatör kommer bli meddelad.
+      options:
+        actionNeeded: Ja
+        noActionNeeded: Nej, det behövs inte
+      question: Framkom något under samtalet som kräver att en ansvarig agerar?
+      summary:
+        actionNeeded: Du vill att någon ansvarig kollar på samtalet.
+        noActionNeeded: Ingen ansvarig behöver agera.
+    organizerLog:
+      effect:
+        leftLog: 'Organisatören kommer få följande meddelande:'
+      options:
+        saveWithLog: Inkludera meddelandet
+        saveWithoutLog: Spara utan meddelande
+      question: Förklara för den som är ansvarig vad problemet är.
+      summary:
+        emptyLog: Du skrev ingen anteckning till organisatören.
+        leftLog: Du skrev en anteckning till organisatören.
+      templates:
+        wrongNumber: Fel nummer ({ numbers }), undersök gärna.
+    successCouldTalk:
+      effect:
+        callBack: Framtida ringare kommer se att vi behövde ringa tillbaka.
+        couldTalk: Framtida ringare kommer se att ni kunde prata färdigt.
+      options:
+        callBack: Nej, vi måste ringa tillbaka
+        couldTalk: Ja
+      question: Kunde {target} prata just nu?
+      summary:
+        callBack: '{target} hade inte tid att prata just nu.'
+        couldTalk: '{target} kunde prata med oss.'
+    successOrFailure:
+      effect:
+        failure: Framtida ringare kommer se att du inte pratat med {target}.
+        success: Framtida ringare kommer se att du pratat med {target}.
+      options:
+        failure: Nej...
+        success: Ja
+      question: Nådde du {target}?
+      summary:
+        failure: Du nådde inte {target}.
+        success: Du nådde {target}.
+    summary:
+      surveys:
+        status: |-
+          Under samtalet matade du in svar på {count, plural,
+          =1 {en enkät} other {# enkäter}} som kommer att skickas in. Kryssa
+          ur enkätsvar du vill slänga.
+        submitted: |-
+          Under samtalet matade du in svar på {count, plural,
+          =1 {en enkät} other {# enkäter}}.
+        surveyDiscarded: Ignorerade svar på "{survey}"
+        surveySubmitted: Skickade in svar på "{survey}"
+    wrongNumber:
+      options:
+        both: Båda numren var fel
+        single: Bara { phone } var fel
+      question: Vilket nummer var fel?
+      summary:
+        both: Båda numren var fel
+        single: '{ phone } var fel nummer'
+  edit: Ändra
+stats:
+  calls_made: ringda samtal
+  calls_reached: lyckade samtal
+  target_size: '{number, plural, =1 { person } other { personer }} i målgruppen'
+surveyForm:
+  select:
+    default: Välj ett alternativ
+tutorial:
+  closeButton: Jag förstår
+  manualButton: Läs mer i manualen
+  notes:
+    intro:
+      h: Starta ringuppdrag
+      href: http://manual.zetkin.org/sv/for-aktivister/ringa-med-zetkin/innan-du-borjar/
+      p: |-
+        Du ska nu starta ett ringuppdrag. Läs uppdragets instruktioner och
+        förbered dig. Klicka sedan på "Börja ringa" för att sätta igång.
+    laneSwitch:
+      h: Rapportera gamla samtal på nytt
+      href: http://manual.zetkin.org/sv/for-aktivister/ringa-med-zetkin/gora-om-ett-samtal/
+      p: |-
+        Här kan du rapportera ett nytt samtal med en person du pratat med
+        tidigare. Det är användbart exempelvis om du blir uppringd.
+    postCall:
+      h: När samtalet är färdigt
+      href: http://manual.zetkin.org/sv/for-aktivister/ringa-med-zetkin/samtalet/rapportera/
+      p: Efter att du pratat med personen klickar du här för att gå vidare och
+        rapportera samtalet.
+    prepare:
+      h: Lär känna personen
+      href: http://manual.zetkin.org/sv/for-aktivister/ringa-med-zetkin/samtalet/forbered-dig/
+      p: |-
+        Här är den första personen du ska ringa. Förbered dig inför
+        samtalet och gå sedan vidare för att ringa.
+    targetInfoPhone:
+      h: Använd din telefon
+      href: http://manual.zetkin.org/sv/for-aktivister/ringa-med-zetkin/samtalet/ring/
+      p: |-
+        Här ser du en sammanfattning om personen, inklusive numret du ska
+        ringa. För att ringa använder du en vanlig telefon.
+    targetInfoVoip:
+      h: Klicka på telefonnumret för att ringa med IP-telefoni
+      href: http://manual.zetkin.org/sv/for-aktivister/ringa-med-zetkin/samtalet/ring/
+      p: >-
+        Här ser du en sammanfattning om personen, inklusive numret du ska
+
+        ringa. För att ringa klickar du på numret eller använder en vanlig telefon.

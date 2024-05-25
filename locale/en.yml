@@ -1,0 +1,394 @@
+campaignForm:
+  action:
+    noTitle: Untitled event
+    noLocation: No physical location
+    booked: Booked
+    button:
+      signUp: Sign up
+      undoSignUp: Undo Sign up
+    currentNeed: More activists needed here
+    infoButton: Info
+    multiLocationLabel: |
+      {count, plural,
+          =2 {In two locations}
+          =3 {In three locations}
+          =4 {In four locations}
+          =5 {In five locations}
+          other {In # locations}
+      }
+  calendar:
+    weekDays:
+      friday: F
+      monday: M
+      saturday: S
+      sunday: S
+      thursday: T
+      tuesday: T
+      wednesday: W
+  filter:
+    activity:
+      active:
+        p: Filtering actions by activity
+        button: Show all actions
+      inactive:
+        p: Showing all actions regardless of activity.
+        button: Filter by activity
+      modal:
+        clearButton: Show all activities
+    modal:
+      title: Filter by activity
+      closeButton: Filter
+      toggleActionCount: |
+        {count, plural,
+            =1 {One action}
+            other {# actions}
+        }
+    showNeed:
+      button:
+        show: Show me where I'm needed
+        hide: Show all actions
+      p: |
+        There {count, plural,
+            =1 {is currently one action}
+            other  {are currently # actions}
+        } in need of more participants
+  message:
+    showNeed:
+      p: |
+        More activists are needed at {count, plural,
+            =1 {this action}
+            other {these actions}
+        }. If you don't find anything that works for you, you can
+        of course still go back and sign up for something else.
+      title: You're needed here!
+    yourActions:
+      p: |
+        This is where you keep track of where you need to be.
+        If you just signed up and change your mind, you can undo.
+        But if you have been booked and need to cancel, you must
+        contact your organization.
+      title: Your upcoming actions
+controlBar:
+  assignmentsButton: Show all assignments
+  callButton: Start call
+  endButton: Stop calling
+  finishCallButton: Finish & report
+  instructions:
+    prepare: Prepare for the call
+  nextCallButton: Continue calling
+  skipButton: Skip
+  startButton: Start calling
+  submitReportButton: Send report
+  targetInfo:
+    lastFailure: Last tried {date}
+    lastNever: Never tried before
+    lastSuccessful: Last reached {date}
+header:
+  dashboardLink: My Page
+  user:
+    logout: Log out
+    settings: Settings
+misc:
+  callLog:
+    emptyLabel: Never called
+    note: The caller did not leave a note
+    summary:
+      status0: Call not completed
+      status1: We reached {target}.
+      status11: '{target} did not pick up.'
+      status12: Line busy.
+      status13: '{target} asked us to call after {date}.'
+      status14: '{target} was not available. Call back after {date}'
+      status15: We left a message.
+      status21: We had the wrong number.
+      status22: The call was dropped.
+  tagList:
+    emptyLabel: No tags
+    overflowLabel: |-
+      There {count, plural,
+          =1 {is one more tag}
+          other {are # more tags}
+      } in the personal info pane
+  callInstructions:
+    instructions: |-
+      Tap on the number to call, or enter the number manually on your phone.
+      Tapping the number will open your phone app. Return here to your web
+      browser to continue using Zetkin and report the call.
+overlays:
+  laneOverview:
+    lanes:
+      h: Unfinished calls
+      ops:
+        discard: Abandon call
+        switch: Switch to this call
+      p: Here are calls you started but never finished. You should finish the calls or
+        abandon them so others can call the same people.
+    log:
+      filterPlaceholder: Type name to filter
+      h: Your previous calls
+      ops:
+        repeat: Log new call with {target}
+        switch: Switch to unfinished call with {target}
+      p: You can start new calls with people you've called before.
+  resume:
+    h: You have unfinished calls
+    ops:
+      discard: Abandon call to {target}
+      resume: Resume call to {target}
+    p: During a previous session you have been assigned a call that you have yet to
+      report.
+  skip:
+    h: Skip call
+    p: Do you want to skip {target} and call someone else instead?
+    resumeButton: No, resume call
+    skipButton: Yes, skip {target}
+pages:
+  assignments:
+    h1: Your assignments
+    intro: You have {numAssignments, plural, =1 {one assignment} other {#
+      assignments}} to call.
+    isPendingIntro: One moment please, we are loading your assignments
+    noAssignmentsIntro: You have no call assignments. Contact an official from your
+      organization if you want to help call.
+    notLoading: Your assignments should load within seconds. If nothing happens it
+      could be because you are using an incompatibile web browser. Try using
+      Chrome or Firefox.
+    startCalling: Select assignment and start calling
+  call:
+    tabs:
+      instructions: Instructions
+      target: Personal info
+      input: Act as {target}
+      report: Report
+      stats: Good work
+  end:
+    assignmentsButton: Keep calling
+    dashboardButton: Go to My Page
+    h: Thanks for calling
+    p: Your work is important to build a stronger organization.
+  landing:
+    h1: Welcome
+    intro: This is Zetkin's caller interface. To use Zetkin Call you have to be
+      signed in.
+    loginButton: Sign in
+  notFound:
+    assignmentsButton: Select an assignment
+    dashboardButton: Go to My Page
+    h1: Page not found
+    p: You have tried accessing a page that does not exist in Zetkin Call, perhaps
+      because you've clicked a broken link.
+panes:
+  input:
+    h1: Act as {target}
+    summary:
+      campaigns:
+        actions: '{count} aktioner'
+        bookings: |-
+          {numBookings, plural,
+              =0 {no bookings}
+              =1 {one booking}
+              other {# bookings}
+          }
+        h2: Active campaigns
+        respondButton: Sign up
+        responses: |-
+          {numResponses, plural,
+              =0 {no unbooked sign-ups}
+              =1 {one unbooked sign-up}
+              other {# unbooked sign-ups}
+          }
+        status: '{target} has'
+      surveys:
+        h2: Surveys
+        respondButton: Respond
+    summaryLabel: Summary
+    summaryLink: Summary
+  instructions:
+    h1: Instructions
+    targetButton: Show personal info
+  queueEmpty:
+    assignmentsLink: Choose another assignment
+    h1: No more people to call!
+    p: The call queue is empty at the moment. More people might be added shortly,
+      but for now you can't continue calling in this assignment.
+  report:
+    backLink: Go back
+    h:
+      report: Report call
+      reported: Call reported
+  stats:
+    h1: Great work!
+    p: Your work is important to build a stronger organization. Here's a summary of
+      how the assignment is progressing.
+  target:
+    activityHeader: Previous activity
+    activityLabel: >-
+      {count, plural,
+          =0 {{target} never participated in any actions.}
+          =1 {{target} participated in one action, {lastAction}.}
+          other {{target} participated in {count} actions, the most recent being {lastAction}.}
+      }
+    activityLastAction: '{activity } ({location}) {date}'
+    callLogHeader: Previous calls to {target}
+    editHeader: Edit this information?
+    editInfo: |-
+      If something in this tab needs changing, write a message to the
+      organizer in the report after finishing the call.
+    h1: Personal info
+    instructionsButton: Show instructions
+    tagHeader: Tags
+report:
+  edit: Change
+  steps:
+    callBack:
+      effect:
+        asap: '{target} is placed last in the queue'
+        other: In the meantime, {target} is automatically removed from the queue.
+      examples:
+        nextWeek: Next week
+        today: Later today
+        tomorrow: Tomorrow
+      examplesLabel: Examples
+      question: When should we call back?
+      submitButton: Call back after { date }
+      summary: We will call back after { date }
+      timeOfDay:
+        any: At any time of day
+        after: After { hour }:00
+    callerLog:
+      disabled: Notes have been disabled for this assignment.
+      effect:
+        leftLog: 'Future callers will see your note:'
+      options:
+        saveWithLog: Save note
+        saveWithoutLog: Save without note
+      question: Do you wish to leave a note for future callers?
+      summary:
+        emptyLog: You did not leave a note to future callers.
+        leftLog: You wrote a note to future callers.
+    failureMessage:
+      effect:
+        leftMessage: Future callers will see that you left a message.
+      options:
+        leftMessage: Yes
+        noMessage: No
+      question: Did you leave a message on the machine?
+      summary:
+        leftMessage: You left a message.
+        noMessage: You did not leave a message.
+    failureReason:
+      options:
+        lineBusy: Busy
+        noPickup: Answering machine / no pick-up
+        notAvailable: Not available right now
+        wrongNumber: Wrong number
+      question: Why not?
+      summary:
+        lineBusy: The line was busy.
+        noPickup: '{target} did not pick up.'
+        notAvailable: '{target} was not available right now.'
+        wrongNumber: We had the wrong number for {target}.
+    organizerAction:
+      effect:
+        actionNeeded: An official will be notified.
+      options:
+        actionNeeded: Yes, notify official
+        noActionNeeded: No, not needed
+      question: Did anything happen during the call that requires action by an official?
+      summary:
+        actionNeeded: You want an official to take a look at this call.
+        noActionNeeded: No action is necessary.
+    organizerLog:
+      effect:
+        leftLog: 'The official will see your message:'
+      options:
+        saveWithLog: Include message
+        saveWithoutLog: Save without message
+      question: Explain the problem to the official.
+      summary:
+        emptyLog: You did not leave a message to the official.
+        leftLog: You left a message to the official.
+      templates:
+        wrongNumber: Wrong number ({ numbers }), please investigate.
+    successCouldTalk:
+      effect:
+        callBack: Future callers will see that we had to call back.
+        couldTalk: Future callers will see that you were able to finish.
+      options:
+        callBack: No, we have to call back
+        couldTalk: Yes
+      question: Could {target} talk?
+      summary:
+        callBack: '{target} could not talk to us right now.'
+        couldTalk: '{target} could talk to us.'
+    successOrFailure:
+      effect:
+        failure: Future callers will see that you did not speak to {target}
+        success: Future callers will see that you spoke to {target}
+      options:
+        failure: No...
+        success: Yes
+      question: Did you reach {target}?
+      summary:
+        failure: You did not reach {target}.
+        success: You reached {target}.
+    summary:
+      surveys:
+        status: |-
+          During the call you entered responses to {count, plural,
+          =1 {one survey} other {# surveys}}, which will be submitted unless
+          deselected below.
+        submitted: |-
+          During the call you entered responses to {count, plural,
+          =1 {one survey} other {# surveys}}.
+        surveyDiscarded: Discarded responses for "{survey}"
+        surveySubmitted: Submitted responses to "{survey}"
+    wrongNumber:
+      options:
+        both: Both numbers were wrong
+        single: Just { phone } was wrong
+      question: Which number was wrong?
+      summary:
+        both: Both numbers were wrong
+        single: '{ phone } was the wrong number'
+stats:
+  calls_made: Calls made
+  calls_reached: Successful calls
+  target_size: '{number, plural, =1 { person } other { people }} in target group'
+surveyForm:
+  select:
+    default: Select an option
+tutorial:
+  closeButton: I understand
+  manualButton: Read more in the manual
+  notes:
+    intro:
+      h: Start assignment
+      href: http://manual.zetkin.org/en
+      p: You are about to start a call assignment. Read the assignment instructions
+        and prepare. Then click "Start calling" to start.
+    laneSwitch:
+      h: Report old calls again
+      href: http://manual.zetkin.org/en
+      p: Here you can report a new call with a person you called before. It's
+        particularly useful if someone calls you back.
+    postCall:
+      h: After the call
+      href: http://manual.zetkin.org/en
+      p: After you finished talking to the person, click here to proceed to reporting
+        the call.
+    prepare:
+      h: Get to know the person
+      href: http://manual.zetkin.org/en
+      p: This is the first person you will be calling. Prepare for the call and then
+        continue to make the call.
+    targetInfoPhone:
+      h: Use your phone
+      href: http://manual.zetkin.org/en
+      p: Here is a short summary of the person, including their phone number. Use a
+        regular phone to dial and call the person.
+    targetInfoVoip:
+      h: Click phone number to use IP dialing
+      href: http://manual.zetkin.org/en
+      p: Here is a short summary of the person, including their phone number. Click
+        the number to dial or use a regular phone to dial the number.

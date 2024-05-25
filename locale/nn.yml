@@ -1,0 +1,381 @@
+campaignForm:
+  action:
+    noLocation: Ingen fysisk sted
+    booked: Bestilt
+    button:
+      signUp: Skriv deg opp
+      undoSignUp: Avbryt påmelding
+    currentNeed: Fleire aktivistar trengst her
+    infoButton: Info
+    multiLocationLabel: |-
+      {count, plural,
+          =2 {På to plassar}
+          =3 {På tre plassar}
+          =4 {På fire plassar}
+          =5 {På fem plassar}
+          other {På # plassar}
+      }
+  calendar:
+    weekDays:
+      friday: F
+      monday: M
+      saturday: S
+      sunday: S
+      thursday: T
+      tuesday: T
+      wednesday: W
+  filter:
+    activity:
+      active:
+        p: Sil ut aksjonar etter aktivitet
+        button: Vis alle aksjonar
+      inactive:
+        p: Viser alle aksjonar uavhengig av aktivitet
+        button: Sil ut etter aktivitet
+      modal:
+        clearButton: Vis alle aktivitetar
+    modal:
+      title: Sil ut etter aktivitet
+      closeButton: Filter
+      toggleActionCount: |-
+        {count, plural,
+            =1 {Ein aksjon}
+            other {# aksjonar}
+        }
+    showNeed:
+      button:
+        show: Vis meg der eg trengst
+        hide: Vis alle aksjonar
+      p: |-
+        Det {count, plural,
+            =1 {er for tida ein aksjon}
+            other  {er for tida # aksjonar}
+        } som treng fleire deltakarar
+  message:
+    showNeed:
+      p: |-
+        Fleire aktivistar trengst på {count, plural,
+            =1 {denne aksjonen}
+            other {desse aksjonane}
+        }. Dersom du ikkje finn noko som funkar for deg kan du
+        sjølvsagt gå tilbake og skrive deg opp på noko anna.
+      title: Du trengst her!
+    yourActions:
+      p: Her kan du halde oversikt over kvar du skal vere. Dersom du nettopp skreiv
+        deg opp og ombestemmer deg, kan du gjere om handlinga. Dersom du er
+        oppmeld og må avbestille, må du kontakte organisasjonen.
+      title: Dine framtidige aksjonar
+controlBar:
+  assignmentsButton: Vis alle ærende
+  callButton: Begynn samtale
+  endButton: Avslutt oppringing
+  finishCallButton: Avslutt og gi rapport
+  instructions:
+    prepare: Forbered deg til samtalen
+  nextCallButton: Hald fram med oppringing
+  skipButton: Hopp over
+  startButton: Begynn å ringe
+  submitReportButton: Send rapport
+  targetInfo:
+    lastFailure: Sist prøvd {date}
+    lastNever: Aldri prøvd før
+    lastSuccessful: Sist nådd {date}
+header:
+  dashboardLink: Mi side
+  user:
+    logout: Logg ut
+    settings: Innstillingar
+misc:
+  callLog:
+    emptyLabel: Aldri oppringt
+    note: Ringeaktivisten la ikkje igjen melding
+    summary:
+      status0: Samtale ikkje fullført
+      status1: Vi nådde { target }
+      status11: '{target} tok ikkje telefonen'
+      status12: Oppteken
+      status13: '{target} ba oss ringe etter {date}'
+      status14: '{target} var ikkje tilgjengeleg. Ring tilbake etter {date}'
+      status15: Vi la att beskjed.
+      status21: Vi hadde feil nummer.
+      status22: Samtalen datt ut
+  tagList:
+    emptyLabel: Ingen etikettar
+    overflowLabel: |-
+      Det {count, plural,
+          =1 {er ein til etikett}
+          other {er # til etikettar}
+      } i feltet for personleg info
+  callInstructions:
+    instructions: Klikk på nummeret for å ringe eller tast nummeret manuellt på
+      telefonen. Klikkar du på nummeret åpnar telefonappen. Gå så tilbake til
+      nettlesaren for å halde fram i Zetkin og logge samtalen.
+overlays:
+  laneOverview:
+    lanes:
+      h: Uferdige samtaler
+      ops:
+        discard: Forkast samtale
+        switch: Bytt til denne samtalen
+      p: Her er samtaler du starta men ikkje fullførte. Fullfør samtalene eller
+        forkast dei slik at nokon andre kan ringe nummeret.
+    log:
+      filterPlaceholder: Skriv namn for å sile ut
+      h: Dine tidlegare samtaler
+      ops:
+        repeat: Logg ny samtale med {target}
+        switch: Bytt til uferdig samtale med {target}
+      p: Du kan starte nye samtaler med folk du ikkje har snakka med før.
+  resume:
+    h: Du har uferdige samtaler
+    ops:
+      discard: Forkast samtale til {target}
+      resume: Hald fram med samtale til {target}
+    p: I ei tidlegare økt vart du tildelt eit ringeærende som du ikkje har lagt att
+      melding om.
+  skip:
+    h: Hopp over samtale
+    p: Vil du hoppe over {target} og ringe nokon andre?
+    resumeButton: Nei, gå tilbake til samtale
+    skipButton: Ja, hopp over {target}
+pages:
+  assignments:
+    h1: Dine ærende
+    intro: Du har {numAssignments, plural, =1 {eitt ærende} other {# ærende}} å ringe.
+    isPendingIntro: Eitt sekund, vi lastar inn dine ærende
+    noAssignmentsIntro: Du har ingen ringeærende. Kontakt ein tillitsvald frå
+      organisasjonen dersom du vil hjelpe til.
+    notLoading: Dine ærende burde dukke opp om nokre sekund. Dersom ingenting skjer
+      kan det vere fordi du bruker ein inkompatibel nettlesar. Prøv med Chrome
+      eller Firefox.
+    startCalling: Vel ærende og begynn å ringe
+  call:
+    tabs:
+      instructions: Rettleiing
+      target: Personleg info
+      input: Agér som {target}
+      report: Rapportér
+      stats: Godt jobba!
+  end:
+    assignmentsButton: Hald fram å ringe
+    dashboardButton: Gå til mi side
+    h: Takk for at du ringde
+    p: Arbeidet ditt er viktig for å bygge ein sterkare organisasjon.
+  landing:
+    h1: Velkomen
+    intro: Dette er brukar
+    loginButton: Logg inn
+  notFound:
+    assignmentsButton: Vel eit ærende
+    dashboardButton: Gå til Mi side
+    h1: Sida finst ikkje
+    p: Du har prøvd å nå ei side som ikkje finst i Zetkin Call. Kanskje har du
+      klikka på ei lenke som ikkje funkar.
+panes:
+  input:
+    h1: Agér som {target}
+    summary:
+      campaigns:
+        actions: '{count} aksjonar'
+        bookings: |-
+          {numBookings, plural,
+              =0 {ingen bestillingar}
+              =1 {ein bestilling}
+              other {# bestillingar}
+          }
+        h2: Aktive kampanjar
+        respondButton: Skriv opp
+        responses: |-
+          {numResponses, plural,
+              =0 {ingen utildelte oppmeldingar}
+              =1 {ei utildelt oppmelding}
+              other {# utildelte oppmeldingar}
+          }
+        status: '{target} har'
+      surveys:
+        h2: Undersøkingar
+        respondButton: Svar
+    summaryLabel: Oppsummering
+    summaryLink: Oppsummering
+  instructions:
+    h1: Rettleiing
+    targetButton: Vi personleg info
+  queueEmpty:
+    assignmentsLink: Vel eit anna ærende
+    h1: Ingen fleire å ringe!
+    p: Ringekøen er tom akkurat no. Fleire personar kan bli tillagde snart men for
+      tida finst det ikkje fleire samtaler i ærendet.
+  report:
+    backLink: Gå tilbake
+    h:
+      report: Rapportér samtale
+      reported: Samtalerapport avgitt
+  stats:
+    h1: Godt jobba!
+    p: Arbeidet ditt er viktig for å bygge ein sterkare organisasjon. Here er ei
+      oppsummering av framgangen i ærendet.
+  target:
+    activityHeader: Tidlegare aktivitet
+    activityLabel: >-
+      {count, plural,
+          =0 {{target} har aldri delteke på aksjon.}
+          =1 {{target} har delteke på ein aksjon, {lastAction}.}
+          other {{target} har delteke på {count} aksjonar, den mest nylege var {lastAction}.}
+      }
+    activityLastAction: '{activity } ({location}) {date}'
+    callLogHeader: Tidlegare samtaler til {target}
+    editHeader: Endre denne informasjonen?
+    editInfo: Dersom noko i denne fliken burde endrast, skriv melding til den
+      tillitsvalde i rapporten etter avslutta samtale.
+    h1: Personleg info
+    instructionsButton: Vis rettleiing
+    tagHeader: Etikettar
+report:
+  edit: Endre
+  steps:
+    callBack:
+      effect:
+        asap: '{target} er plassert sist i køen'
+        other: I mellomtida blir {target} automatisk teken bort frå køen.
+      examples:
+        nextWeek: Neste veke
+        today: Seinare i dag
+        tomorrow: I morgon
+      examplesLabel: Døme
+      question: Når burde vi ringe tilbake?
+      submitButton: Ring tilbake etter { date }
+      summary: Vi ringer tilbake etter { date }
+      timeOfDay:
+        any: Når som helst på dagen
+        after: Etter { hour }:00
+    callerLog:
+      disabled: Meldingsfunksjonen er av for dette ærendet.
+      effect:
+        leftLog: 'Framtidige telefonaktivistar kjem til å sjå meldinga di:'
+      options:
+        saveWithLog: Lagre melding
+        saveWithoutLog: Lagre utan melding
+      question: Vil du legge igjen beskjed til framtidige ringeaktivistar?
+      summary:
+        emptyLog: Du har ikkje lagt att melding til framtidige ringeaktivistar.
+        leftLog: Du skreiv ei melding til framtidige ringeaktivistar
+    failureMessage:
+      effect:
+        leftMessage: Framtidige ringeaktivistar kjem til å sjå at du la igjen beskjed.
+      options:
+        leftMessage: Ja
+        noMessage: Nei
+      question: La du igjen beskjed på telefonsvararen?
+      summary:
+        leftMessage: Du la att beskjed.
+        noMessage: Du la ikkje igjen beskjed.
+    failureReason:
+      options:
+        lineBusy: Oppteken
+        noPickup: Telefonsvarar/ tok ikkje telefonen
+        notAvailable: Ikkje tilgjengeleg no
+        wrongNumber: Feil nummer
+      question: Kvifor ikkje?
+      summary:
+        lineBusy: Linja var oppteken
+        noPickup: '{target} tok ikkje telefonen'
+        notAvailable: '{target} var ikkje tilgjengeleg'
+        wrongNumber: Vi hadde feil nummer for {target}
+    organizerAction:
+      effect:
+        actionNeeded: Ein tillitsvald vil få beskjed
+      options:
+        actionNeeded: Ja, gi beskjed til tillitsvald
+        noActionNeeded: Nei, ikkje nødvendig
+      question: Skjedde det noko i løpet av samtalen som krev oppfølging frå tillitsvald?
+      summary:
+        actionNeeded: Du vil at ein tillitsvald ser på denne samtalen.
+        noActionNeeded: Inga handling trengst.
+    organizerLog:
+      effect:
+        leftLog: 'Den tillitsvalde kjem til å sjå meldinga di:'
+      options:
+        saveWithLog: Inkludér melding
+        saveWithoutLog: Lagre utan melding
+      question: Forklar problemet til den tillitsvalde
+      summary:
+        emptyLog: Du har ikkje lagt att beskjed til den tillitsvalde.
+        leftLog: Du har lagt igjen beskjed.
+      templates:
+        wrongNumber: Feil nummer ({ numbers }), ver venleg og undersøk.
+    successCouldTalk:
+      effect:
+        callBack: Framtidige ringeaktivistar kjem til å sjå at vi måtte ringe tilbake
+        couldTalk: Framtidige ringeaktivistar kjem til å sjå at du avslutta samtalen.
+      options:
+        callBack: Nei, vi må ringe tilbake.
+        couldTalk: Ja
+      question: Kunne {target} snakke?
+      summary:
+        callBack: '{target} kunne ikkje snakke med oss no.'
+        couldTalk: '{target} kunne snakke med oss.'
+    successOrFailure:
+      effect:
+        failure: Framtidige telefonaktivistar kjem til å sjå at du ikkje snakka med
+          {target}
+        success: Framtidige ringeaktivistar kjem til å sjå at du snakka med {target}
+      options:
+        failure: Nei...
+        success: Ja
+      question: Har du nådd { target }?
+      summary:
+        failure: Du nådde ikkje {target}
+        success: Du nådde {target}.
+    summary:
+      surveys:
+        status: >-
+          I løpet av samtalen avga du svar på {count, plural,
+
+          =1 {ei undersøking} other {# undersøkingar}}, som vil bli innsende dersom du ikkje kryssar av under.
+        submitted: I løpet av samtalen avga du svar på {count, plural, =1 {ei
+          undersøking} other {# undersøkingar}}.
+        surveyDiscarded: Forkasta svar på "{survey}"
+        surveySubmitted: Inkomne svar på "{survey}"
+    wrongNumber:
+      options:
+        both: Begge nummera var feil
+        single: Berre { phone } var feil
+      question: Kva for eit nummer var feil?
+      summary:
+        both: Begge nummera var feil
+        single: '{ phone } var feil nummer'
+stats:
+  calls_made: Fullførte samtaler
+  calls_reached: Vellykka samtaler
+  target_size: '{number, plural, =1 { person i } other { personar i }} målgruppe'
+surveyForm:
+  select:
+    default: Velg et alternativ
+tutorial:
+  closeButton: Eg forstår
+  manualButton: Les meir i manualen
+  notes:
+    intro:
+      h: Kom i gang med ærendet
+      href: http://manual.zetkin.org/no
+      p: 'Du skal straks starte eit ringeærende. Les rettleiinga og forbered deg.
+        Klikk deretter på "Begynn å ringe" for å starte. '
+    laneSwitch:
+      h: Avgi rapport for gamle samtaler igjen
+      href: http://manual.zetkin.org/no
+      p: Her kan du avgi rapport om ny samtale med nokon du har ringt tidlegare. Det
+        er til stor hjelp dersom nokon ringer tilbake.
+    postCall:
+      h: Etter samtalen
+      href: http://manual.zetkin.org/no
+      p: Etter at du er ferdig med samtalen kan du klikke her for å avgi rapport.
+    prepare:
+      h: Bli kjend med personen
+      href: http://manual.zetkin.org/no
+      p: Dette er den fyrste personen du ringer. Forbered deg fyrst og så hald fram
+        med samtalen.
+    targetInfoPhone:
+      h: Bruk telefonen din
+      href: http://manual.zetkin.org/no
+      p: Her er ei kort oppsummering av personen, inkludert telefonnummer. Bruk vanleg
+        telefon for å ringe personen.

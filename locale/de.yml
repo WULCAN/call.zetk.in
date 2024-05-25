@@ -1,0 +1,400 @@
+campaignForm:
+  action:
+    booked: Gebucht
+    button:
+      signUp: Anmelden
+      undoSignUp: Abmelden
+    currentNeed: Hier werden mehr Aktive gebraucht
+    infoButton: Info
+    multiLocationLabel: |-
+      {count, plural,
+      =2 {an zwei Orten}
+      =3 {an drei Orten}
+      =4 {an vier Orten}
+      =5 {an fünf Orten}
+      other {an # Orten}
+      }
+    noLocation: kein Ort
+    noTitle: unbenannte Aktion
+  calendar:
+    weekDays:
+      friday: Fr
+      monday: Mo
+      saturday: Sa
+      sunday: So
+      thursday: Do
+      tuesday: Di
+      wednesday: Mi
+  filter:
+    activity:
+      active:
+        button: Alle Aktionen anzeigen
+        p: Nach Aktivitätstyp filtern
+      inactive:
+        button: Nach Aktivitätstyp filtern
+        p: Alles anzeigen unabhängig vom Aktivitätstyp
+      modal:
+        clearButton: Alle Aktivitäten anzeigen
+    modal:
+      closeButton: Filtern
+      title: Nach Aktivitätstyp filtern
+      toggleActionCount: |-
+        {count, plural,
+        =1 {eine Aktion}
+        other {# Aktionen}
+        }
+    showNeed:
+      button:
+        hide: Alle Aktionen anzeigen
+        show: Anzeigen, wo ich gebraucht werde
+      p: |-
+        Es gibt momentan {count, plural,
+        =1 {eine Aktion}
+        other { # Aktionen}
+        }, die mehr Aktive benötigen.
+  message:
+    showNeed:
+      p: >-
+        Bei {count, plural,
+
+        =1 {dieser Aktion}
+
+        other {diesen Aktionen}
+
+        } werden mehr Aktive gebraucht. Wenn du hier nichts Passendes für dich findest, kannst du natürlich zurückgehen und dich für etwas anderes anmelden.
+      title: Du wirst hier gebraucht!
+    yourActions:
+      p: Hier ist dein Überblick, wo du dabei sein wirst. Wenn du dich gerade
+        angemeldet hast und deine Meinung änderst, kannst du dich direkt wieder
+        abmelden. Sobald du aber bestätigt wurdest, musst du dich bei der
+        Kontaktperson melden, um abzusagen.
+      title: Deine anstehenden Aktivitäten
+controlBar:
+  assignmentsButton: Alle Telefonaktionen anzeigen
+  callButton: Anruf starten
+  endButton: Anrufen beenden
+  finishCallButton: Beenden & berichten
+  instructions:
+    prepare: Auf den Anruf vorbereiten
+  nextCallButton: Weiter anrufen
+  skipButton: Überspringen
+  startButton: Anrufen beginnen
+  submitReportButton: Bericht abschicken
+  targetInfo:
+    lastFailure: Zuletzt versucht am {date}
+    lastNever: Bisher nicht versucht
+    lastSuccessful: Zuletzt erreicht am {date}
+calls_made: Getätigte Anrufe
+calls_reached: Erfolgreiche Anrufe
+target_size: '{number, plural, =1 { Zielperson } other { Zielpersonen }} in der Zielgruppe'
+header:
+  dashboardLink: Meine Seite
+  user:
+    logout: Ausloggen
+    settings: Einstellungen
+misc:
+  callInstructions:
+    instructions: Klicke auf die anzurufende Nummer oder wähle die Nummer
+  callLog:
+    emptyLabel: Niemals angerufen
+    note: Telefonierer*in hat keine Notiz hinterlassen
+    summary:
+      status0: Anruf nicht beendet
+      status1: Wir haben {target} erreicht.
+      status11: '{target} hat nicht abgenommen.'
+      status12: Besetzt
+      status13: '{target} möchte nach dem {date} angerufen werden.'
+      status14: '{target} war nicht erreichbar. Rufe nach dem {date} nochmal an.'
+      status15: Wir haben eine Nachricht hinterlassen.
+      status21: Wir hatten eine falsche Nummer.
+      status22: Der Anruf wurde abgebrochen.
+  tagList:
+    emptyLabel: Keine Stichworte
+    overflowLabel: |-
+      Es gibt {count, plural,
+      =1 {ein zusätzliches Stichwort}
+      other {# zusätzliche Stichworte}
+      } in Persönliche Angaben.
+overlays:
+  laneOverview:
+    lanes:
+      h: Nicht beendete Anrufe
+      ops:
+        discard: Anruf aus der persönlichen Wiedervorlage entfernen
+        switch: Zu diesem Anruf wechseln
+      p: Hier siehst du die Anrufe, die du begonnen, aber nie beendet hast. Du
+        solltest sie beenden oder aber aus der persönlichen Wiedervorlage
+        entfernen, damit andere Telefonierer*innen diese Personen anrufen
+        können.
+    log:
+      filterPlaceholder: Tippe den Namen zum Filtern
+      h: Deine vorherigen Anrufe
+      ops:
+        repeat: Neuen Anruf mit {target} protokollieren
+        switch: Zum abgebrochenen Anruf mit {target} wechseln
+      p: Du kannst neue Anrufe mit Zielpersonen starten, die du bereits versucht hast
+        zu erreichen.
+  resume:
+    h: Du hast nicht beendete Anrufe
+    ops:
+      discard: Anruf mit {target} beenden
+      resume: Anruf mit {target} wieder aufnehmen
+    p: In einer vorherigen Sitzung wurde dir ein Anruf zugewiesen, von dem du noch
+      berichten solltest.
+  skip:
+    h: Anruf überspringen
+    p: Möchtest du {target} überspringen und lieber eine andere Person anrufen?
+    resumeButton: Nein, Anruf wieder aufnehmen
+    skipButton: Ja, {target} überspringen
+pages:
+  assignments:
+    h1: Deine Telefonaktionen
+    intro: Du hast {numAssignments, plural, =1 {eine Telefonaktion} other {#
+      Telefonaktionen}} zu erledigen.
+    isPendingIntro: Einen Moment bitte, deine Telefonaktionen werden geladen
+    noAssignmentsIntro: Du hast keine ausstehenden Telefonaktionen. Kontaktiere
+      deine Organisation, falls du unterstützen kannst.
+    notLoading: Deine Telefonaktionen sollten gleich aktualisiert sein. Falls nichts
+      passiert, könnte es an einem nicht kompatiblen Browser liegen. Versuche es
+      mit Firefox oder Chrome.
+    startCalling: Telefonaktion auswählen und starten
+  call:
+    tabs:
+      input: Als {target} handeln
+      instructions: Leitfaden
+      report: Bericht
+      stats: Super Arbeit
+      target: Persönliche Angaben
+  end:
+    assignmentsButton: Weiter anrufen
+    dashboardButton: Gehe zu Meine Seite
+    h: Danke fürs Telefonieren
+    p: Dein Beitrag ist entscheidend, um eine starke LINKE aufzubauen.
+  landing:
+    h1: Willkommen
+    intro: Hier ist Zetkins Startseite für Telefonierer*innen. Um Zetkin Telefonie
+      zu nutzen, musst du dich einloggen.
+    loginButton: Einloggen
+  notFound:
+    assignmentsButton: Eine Telefonaktion auswählen
+    dashboardButton: Gehe zu Meine Seite
+    h1: Seite nicht gefunden
+    p: Du hast versucht eine Seite aufzurufen, die in Zetkin Telefonie nicht
+      existiert, vielleicht ist der Link nicht mehr aktuell.
+panes:
+  input:
+    h1: Als {target} handeln
+    summary:
+      campaigns:
+        bookings: |-
+          {numBookings, plural,
+          =0 {keine Buchungen}
+          =1 {eine Buchung}
+          other {# Buchungen}
+          }
+        h2: Laufende Kampagnen
+        respondButton: Anmelden
+        responses: |-
+          {numResponses, plural,
+          =0 {keine ungebuchten Anmeldungen}
+          =1 {eine ungebuchte Anmeldung}
+          other {# ungebuchte Anmeldungen}
+          }
+        status: '{target} hat'
+      surveys:
+        h2: Umfragen
+        respondButton: Antworten
+    summaryLabel: Überblick
+    summaryLink: Überblick
+  instructions:
+    h1: Leitfaden
+    targetButton: Persönliche Angaben anzeigen
+  queueEmpty:
+    assignmentsLink: Andere Telefonaktion auswählen
+    h1: Keine Zielpersonen übrig!
+    p: Die Anrufliste ist momentan leer. Eventuell werden in Kürze mehr Zielpersonen
+      hinzugefügt, aber momentan kannst du in dieser Telefonaktion nicht
+      weitermachen.
+  report:
+    backLink: Gehe zurück
+    h:
+      report: Anruf auswerten
+      reported: Anruf ausgewertet
+  stats:
+    h1: Slay!
+    p: Deine Arbeit ist wichtig, um eine starke LINKE aufzubauen. Hier ist ein
+      Überblick, wie du vorankommst.
+  target:
+    activityHeader: Vorherige Aktivitäten
+    activityLabel: >-
+      {count, plural,
+
+      =0 {{target} hat nie an irgendeiner Aktion teilgenommen.}
+
+      =1 {{target} hat an einer Aktion teilgenommen, {lastAction}.}
+
+      other {{target} hat an {count} Aktionen teilgenommen, die letzte war {lastAction}.}
+
+      }
+    activityLastAction: '{activity } ({location}) {date}'
+    callLogHeader: Vorherige Anrufe an {target}
+    editHeader: Diese Information bearbeiten?
+    editInfo: Wenn etwas in diesem Fenster geändert werden sollte, teile es nach dem
+      Telefonat über den Bericht mit.
+    h1: Persönliche Angaben
+    instructionsButton: Leitfaden anzeigen
+    tagHeader: Stichworte
+report:
+  edit: Bearbeiten
+  steps:
+    callBack:
+      effect:
+        asap: '{target} steht nun hinten in der Warteschlange'
+        other: In der Zwischenzeit wird {target} von der Warteschlange entfernt.
+      examples:
+        nextWeek: Nächste Woche
+        today: Heute noch
+        tomorrow: Morgen
+      examplesLabel: Beispiele
+      question: Wann sollen wir zurückrufen?
+      submitButton: Am { date } zurückrufen
+      summary: Wir werden am { date } zurückrufen
+      timeOfDay:
+        after: Nach { hour }:00
+        any: Zu irgendeinem Zeitpunkt
+    callerLog:
+      disabled: Die Notizen wurden für diese Telefonaktion deaktiviert.
+      effect:
+        leftLog: 'Zukünftige Telefonierer*innen werden deine Notiz sehen:'
+      options:
+        saveWithLog: Notiz speichern
+        saveWithoutLog: Ohne Notiz speichern
+      question: Möchtest du eine Notiz für zukünftige Telefonierer*innen hinterlassen?
+      summary:
+        emptyLog: Du hast keine Notiz für zukünftige Telefonierer*innen hinterlassen.
+        leftLog: Du hast eine Notiz für zukünftige Telefonierer*innen hinterlassen.
+    failureMessage:
+      effect:
+        leftMessage: Zukünftige Telefonierer*innen werden deine Notiz sehen.
+      options:
+        leftMessage: Ja
+        noMessage: Nein
+      question: Hast du eine Nachricht auf dem Anrufbeantworter hinterlassen?
+      summary:
+        leftMessage: Du hast eine Nachricht hinterlassen.
+        noMessage: Du hast keine Nachricht hinterlassen.
+    failureReason:
+      options:
+        lineBusy: Besetzt
+        noPickup: Anrufbeantworter / nicht abgenommen
+        notAvailable: Momentan nicht erreichbar
+        wrongNumber: Falsche Telefonnummer
+      question: Wieso nicht?
+      summary:
+        lineBusy: Es war besetzt.
+        noPickup: '{target} hat nicht abgenommen.'
+        notAvailable: '{target} war gerade nicht verfügbar.'
+        wrongNumber: Wir hatten für {target} eine falsche Telefonnummer.
+    organizerAction:
+      effect:
+        actionNeeded: Ein*e Organizer*in wird benachrichtigt.
+      options:
+        actionNeeded: Ja, Organizer*in benachrichtigen
+        noActionNeeded: Nein, nicht nötig
+      question: Ist während des Anrufs etwas passiert, was eine Bearbeitung durch
+      summary:
+        actionNeeded: Du möchtest, dass eine Organizer*in diesen Anruf bearbeitet.
+        noActionNeeded: Keine Aktion erforderlich.
+    organizerLog:
+      effect:
+        leftLog: 'Organizer*in wird deine Nachricht sehen:'
+      options:
+        saveWithLog: Nachricht hinzufügen
+        saveWithoutLog: Speichern ohne Nachricht
+      question: Erkläre dem*r Organizer*in das Problem.
+      summary:
+        emptyLog: Du hast keine Nachricht hinterlassen.
+        leftLog: Du hast eine Nachricht hinterlassen.
+      templates:
+        wrongNumber: Falsche Telefonnummern ({ numbers }), bitte überprüfen.
+    successCouldTalk:
+      effect:
+        callBack: Zukünftige Telefonierer*innen werden sehen, dass wir zurückrufen
+          mussten.
+        couldTalk: Zukünftige Telefonierer*innen werden sehen, dass du diesen Anruf
+          abschließen konntest.
+      options:
+        callBack: Nein, wir müssen zurückrufen
+        couldTalk: Ja
+      question: Konnte {target} sprechen?
+      summary:
+        callBack: '{target} konnte gerade nicht sprechen.'
+        couldTalk: '{target} konnte mit uns sprechen.'
+    successOrFailure:
+      effect:
+        failure: Zukünftige Telefonierer*innen werden sehen, dass du nicht mit {target}
+          gesprochen hast
+        success: Zukünftige Telefonierer*innen werden sehen, dass du mit {target}
+          gesprochen hast
+      options:
+        failure: Nein...
+        success: Ja
+      question: Hast du {target} erreicht?
+      summary:
+        failure: Du hast {target} nicht erreicht.
+        success: Du hast {target} erreicht.
+    summary:
+      surveys:
+        status: >-
+          Während des Anrufs hast du Antworten in {count, plural,
+
+          =1 {einer Umfrage} other {# Umfragen}} eingetragen, welche nun eingereicht werden außer du entfernst sie unten.
+        submitted: |-
+          Während des Anrufs hast du Antworten in {count, plural,
+          =1 {einer Umfrage} other {# Umfragen}} eingetragen.
+        surveyDiscarded: Verworfene Antworten für "{survey}"
+        surveySubmitted: Eingereichte Antworten für "{survey}"
+    wrongNumber:
+      options:
+        both: Beide Telefonnummern sind falsch
+        single: Nur { phone } ist falsch
+      question: Welche Telefonnummer ist falsch?
+      summary:
+        both: Beide Telefonnummern sind falsch
+        single: '{ phone } ist eine falsche Telefonnummer.'
+stats:
+  calls_made: Getätigte Anrufe
+  calls_reached: Erfolgreiche Anrufe
+  target_size: '{number, plural, =1 { Zielperson } other { Zielpersonen }} in der
+    Zielgruppe'
+surveyForm:
+  select:
+    default: Option auswählen
+tutorial:
+  closeButton: Verstanden
+  manualButton: Mehr lesen im Handbuch
+  notes:
+    intro:
+      h: Telefonaktion beginnen
+      p: Du bist dabei eine Telefonaktion zu starten. Lies bitte den Leitfaden und
+        bereite dich vor. Dann klicke auf "Anrufen starten" um loszulegen.
+    laneSwitch:
+      h: Von vorherigen Anrufen berichten
+      p: Hier kannst du einen Anrufbericht zu einer Person machen, die du bereits
+        angerufen hattest. Das ist besonders sinnvoll, wenn Personen dich
+        zurückrufen.
+    postCall:
+      h: Nach dem Anruf
+      p: Sobald ihr aufgelegt habt, klicke hier um den Anrufbericht zu starten.
+    prepare:
+      h: Zielperson kennenlernen
+      p: Hier ist die erste Person, die du anrufen wirst. Bereite dich auf den Anruf
+        vor und starte dann den Anruf.
+    targetInfoPhone:
+      h: Benutze dein Telefon
+      p: Hier siehst du einen Überblick zur Person mit Telefonnummer. Wähle die Nummer
+        auf deinem Telefon zum Anrufen.
+    targetInfoVoip:
+      h: Klicke auf die Telefonnummer, um über die Software zu telefonieren
+      p: Hier siehst du einen Überblick zur Person mit Telefonnummer. Klicke hier auf
+        die Nummer zum Anrufen oder wähle die Nummer auf deinem Telefon.

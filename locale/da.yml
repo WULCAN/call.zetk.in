@@ -1,0 +1,324 @@
+campaignForm:
+  action:
+    noLocation: Ingen fysisk sted
+    booked: Booket
+    multiLocationLabel: |-
+      {count, plural,
+          =2 {På to pladser}
+          =3 {På tre pladser}
+          =4 {På fire pladser}
+          =5 {På fem pladser}
+          other {På # pladser}
+      }
+    yesLabel: Ja
+  calendar:
+    weekDays:
+      friday: F
+      monday: M
+      saturday: L
+      sunday: S
+      thursday: T
+      tuesday: T
+      wednesday: O
+  filter:
+    activities:
+      h: |
+        {count, plural,
+            =0 {Filtrer på aktiviteter}
+            =1 {Filtrer på en aktivitet}
+            other {Filtrer på # aktiviteter}
+        }
+    campaigns:
+      h: |
+        {count, plural,
+            =0 {Filtrér på kampagne}
+            =1 {Filtrerer på en kampagne}
+            other {Filtrerer på # kampagner}
+        }
+    h: Filtrér aktioner
+    locations:
+      h: |
+        {count, plural,
+            =0 {Filtrér på pladser}
+            =1 {Filtrerer på en plads}
+            other {Filtrerer på # pladser}
+        }
+  submitLabel: Gem mine tilmeldinger
+controlBar:
+  assignmentsButton: Vis alle opgaver
+  callButton: Start samtale
+  endButton: Stop med at ringe
+  finishCallButton: Afslut og rapportér
+  instructions:
+    prepare: Forbered dig til samtalen
+  nextCallButton: Fortsæt med at ringe
+  skipButton: Spring over
+  startButton: Begynd at ringe
+  submitReportButton: Indsend rapport
+  targetInfo:
+    lastFailure: Sidst forsøgt {date}
+    lastNever: Aldrig ringet til før
+    lastSuccessful: Sidst nået
+header:
+  dashboardLink: Min side
+  user:
+    logout: Log ud
+    settings: Indstillinger
+misc:
+  callLog:
+    emptyLabel: Aldrig ringet
+    note: Ringeren skrev ingen note
+    summary:
+      status0: Samtalen blev ikke afsluttet
+      status1: Vi nåede {target}.
+      status11: '{target} svarede ikke.'
+      status12: Nummeret var optaget.
+      status13: '{target} bad os ringe tilbage.'
+      status14: '{target} var ikke tilgængelig lige nu.'
+      status15: Vi efterlod en besked på telefonsvareren.
+      status21: Vi havde et forkert nummer.
+      status22: Samtalen blev afbrudt.
+  tagList:
+    emptyLabel: Ingen etiketter
+overlays:
+  laneOverview:
+    lanes:
+      h: Uafsluttede samtaler
+      ops:
+        discard: Opgiv samtale
+        switch: Skift til denne samtale
+      p: Her er uafsluttede samtaler. Du bør afslutte samtalerne, eller opgive dem, så
+        andre kan ringe til de samme personer.
+    log:
+      filterPlaceholder: Skriv navn for at filtrere
+      h: Dine tidligere samtaler
+      ops:
+        repeat: Log ny samtale med {target}
+        switch: Skift til uafsluttet samtale med {target}
+      p: Du kan starte nye samtaler med personer du har ringet til tidligere.
+  resume:
+    h: Du har uafsluttede samtaler
+    ops:
+      discard: Opgiv samtale med {target}
+      resume: Genoptag samtale med {target}
+    p: Ved en tidligere session har du fået tildelt en samtale, som du ikke har
+      indrapporteret endnu.
+  skip:
+    h: Spring over samtale
+    p: Vil du spring over {target} og ringe til en anden i stedet?
+    resumeButton: Nej, genoptag samtalen
+    skipButton: Ja, spring over {target}
+pages:
+  assignments:
+    h1: Dine opgaver
+    intro: |-
+      Du har {numAssignments, plural, =1 {en opgave} other {# opgaver}} som du
+      kan ringe på.
+    noAssignmentsIntro: Du har ingen ringeopgaver. Kontakt en organisator i din
+      organisation, hvis du vil hjælpe med at ringe.
+    startCalling: Vælg opgave og begynd at ringe
+  end:
+    assignmentsButton: Fortsæt med at ringe
+    dashboardButton: Gå til Min side
+    h: Tak for at du ringede
+    p: Dit arbejde er vigtigt for at bygge din organisation stærkere
+  landing:
+    h1: Velkommen
+    intro: Dette er Zetkins brugerflade til rundringere. For at kunne ringe, skal du
+      være logget ind.
+    loginButton: Log ind
+  notFound:
+    assignmentsButton: Vælg en ringeopgave
+    dashboardButton: Gå til Min side
+    h1: Siden findes ikke
+    p: Du har forsøgt at gå ind på en side, der ikke eksisterer i Zetkin Call, måske
+      fordi du har klikket på et link der ikke virker.
+panes:
+  input:
+    h1: Agér som {target}
+    summary:
+      campaigns:
+        actions: '{count} aktioner'
+        bookings: |-
+          {numBookings, plural,
+              =0 {ingen bookinger}
+              =1 {en booking}
+              other {# bookinger}
+          }
+        h2: Aktuelle kampagner
+        respondButton: Meld til
+        responses: |-
+          {numResponses, plural,
+              =0 {ingen tilmeldinger}
+              =1 {en tilmelding}
+              other {# tilmeldinger}
+          }
+        status: '{target} har'
+      surveys:
+        h2: Spørgeskemaer
+        respondButton: Svar
+    summaryLabel: Resumé
+    summaryLink: Resumé
+  instructions:
+    h1: Instruktioner
+    targetButton: Vis personinfo
+  queueEmpty:
+    assignmentsLink: Vælg en anden opgave
+    h1: Der er ikke flere personer at ringe til!
+    p: Lige nu findes der ikke flere personer i køen. Det kan være at der bliver
+      tilføjet flere snart, men lige nu kan du ikke fortsætte med at ringe i
+      denne opgave.
+  report:
+    backLink: Gå tilbage
+    h:
+      report: Indrapportér samtale
+      reported: Samtale indrapporteret
+  stats:
+    h1: Godt arbejde!
+    p: Din indsats er vigtig for at bygge din organisation stærkere. Her er et
+      resumé af hvordan det skrider frem.
+  target:
+    activityHeader: Tidligere aktivitet
+    activityLabel: >-
+      {count, plural,
+          =0 {{target} har aldrig deltaget i nogen aktioner.}
+          =1 {{target} har deltaget i en aktion, {lastAction}.}
+          other {{target} har deltaget i {count} aktioner. Den seneste var {lastAction}.}
+      }
+    activityLastAction: '{activity } ({location}) {date}'
+    callLogHeader: Tidligere opringninger til {target}
+    h1: Personinfo
+    instructionsButton: Vis instruktioner
+    tagHeader: Etiketter
+report:
+  edit: Redigér
+  steps:
+    callBack:
+      effect:
+        asap: '{target} placeres sidst i opkaldskøen.'
+        other: '{target} fjernes automatisk fra opkaldskøen så længe.'
+      options:
+        asap: Så snart som muligt
+        fewDays: Om et par dage
+        oneWeek: Om en uge
+        twoWeeks: Om et par uger
+      question: Hvornår skal vi ringe tilbage?
+      summary:
+        asap: Vi ringer tilbage så snart som muligt
+        fewDays: 'Vi ringer tidligst tilbage om et par dage '
+        oneWeek: Vi ringer tidligst tilbage om en uge
+        twoWeeks: Vi ringer tidligst tilbage om to uger
+    callerLog:
+      effect:
+        leftLog: 'De der ringer fremover kommer til at se din note: '
+      options:
+        saveWithLog: Gem note
+        saveWithoutLog: Gem uden note
+      question: Vil du efterlade en note til de der ringer en anden gang?
+      summary:
+        emptyLog: Du skrev ingen note til dem der ringer en anden gang.
+        leftLog: Du skrev en note til dem der ringer en anden gang.
+    failureMessage:
+      effect:
+        leftMessage: Dem der ringer en anden gang, kommer til at se at du har efterladt
+          en besked.
+      options:
+        leftMessage: Ja
+        noMessage: Nej
+      question: Efterlod du en besked på telefonsvareren?
+      summary:
+        leftMessage: Du efterlod en besked.
+        noMessage: Du efterlod ingen besked.
+    failureReason:
+      options:
+        lineBusy: Optaget
+        noPickup: Intet svar / Telefonsvarer
+        notAvailable: Ikke tilgængelig lige nu
+        wrongNumber: Forkert nummer
+      question: Hvorfor ikke?
+      summary:
+        lineBusy: Der var optaget.
+        noPickup: '{target} svarede ikke.'
+        notAvailable: '{target var ikke tilgængelig lige nu.'
+        wrongNumber: Vi havde forkert nummer til {target}.
+    organizerAction:
+      effect:
+        actionNeeded: En tovholder vil blive informeret.
+      options:
+        actionNeeded: Ja, informér en tovholder
+        noActionNeeded: Nej, ikke nødvendigt
+      question: Skete der noget under samtalen, som kræver at en tovholder agerer?
+      summary:
+        actionNeeded: Du vil gerne have at en tovholder ser på samtalen.
+        noActionNeeded: Ingen tovholder behøver at agere.
+    organizerLog:
+      effect:
+        leftLog: 'Tovholderen kommer til at se din besked:'
+      options:
+        saveWithLog: Inkludér besked
+        saveWithoutLog: Gem uden besked
+      question: Forklar tovholderen hvad problemet er.
+      summary:
+        emptyLog: Du skrev ingen besked til tovholderen.
+        leftLog: Du skrev en besked til tovholderen.
+    successCouldTalk:
+      effect:
+        callBack: Andre der ringer fremover, vil kunne se at vi skulle ringe tilbage.
+        couldTalk: Andre der ringer fremover, vil kunne se at du var i stand til at
+          færdiggøre opkaldet.
+      options:
+        callBack: Nej, vi bliver nødt til at ringe tilbage
+        couldTalk: Ja
+      question: Kunne {target} tale lige nu?
+      summary:
+        callBack: '{target} havde ikke tid til at tale med os lige nu.'
+        couldTalk: '{target} kunne tale med os.'
+    successOrFailure:
+      effect:
+        failure: Andre der ringer fremover, kommer til at se du ikke har talt med
+          {target}
+        success: Andre der ringer fremover, kommer til at se du har talt med {target}
+      options:
+        failure: Nej...
+        success: Ja
+      question: Nåede du {target}?
+      summary:
+        failure: Du nåede ikke {target}.
+        success: Du nåede {target}.
+stats:
+  calls_made: Foretagne opkald
+  calls_reached: Gennemførte samtaler
+  target_size: '{number, plural, =1 { person } other { personer }} i målgruppen'
+surveyForm:
+  select:
+    default: Vælg et alternativ
+tutorial:
+  closeButton: Jeg forstår
+  manualButton: Læs mere i manualen
+  notes:
+    intro:
+      h: Start ringeopgaven
+      href: http://manual.zetkin.org/dk
+      p: Du skal nu til at starte på en ringeopgave. Læs instruktionerne til opgaven
+        og forbered dig. Klik så på "Begynd at ringe" for at komme igang.
+    laneSwitch:
+      h: Indrapportér gamle samtaler igen
+      href: http://manual.zetkin.org/dk
+      p: Her kan du indrapportere en ny samtale med en person du har talt med
+        tidligere. Det er for eksempel brugbart når nogen ringer tilbage til
+        dig.
+    postCall:
+      h: Efter samtalen
+      href: http://manual.zetkin.org/dk
+      p: Efter du har talt med personen, klikker du her for at gå videre og
+        indrapportere samtalen.
+    prepare:
+      h: Lær personen at kende
+      href: http://manual.zetkin.org/dk
+      p: Dette er den første person du skal ringe til. Forbered dig på samtalen, og
+        fortsæt så for at lave opkaldet. God vind!
+    targetInfoPhone:
+      h: Brug din telefon
+      href: http://manual.zetkin.org/dk
+      p: Her ser du et resumé om personen, inklusiv nummeret du skal ringe til. Benyt
+        en almindelig telefon for at ringe op.
