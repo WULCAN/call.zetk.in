@@ -1,69 +1,59 @@
-action:
-    noTitle: Untitled event
-    noLocation: No physical location
-    booked: Booked
-    button:
-        signUp: Sign up
-        undoSignUp: Undo Sign up
-    currentNeed: More activists needed here
-    infoButton: Info
-    multiLocationLabel: |
-        {count, plural,
-            =2 {In two locations}
-            =3 {In three locations}
-            =4 {In four locations}
-            =5 {In five locations}
-            other {In # locations}
-        }
-calendar:
-    weekDays:
-        friday: F
-        monday: M
-        saturday: S
-        sunday: S
-        thursday: T
-        tuesday: T
-        wednesday: W
-filter:
-    activity:
-        active:
-            p: Filtering actions by activity
-            button: Show all actions
-        inactive:
-            p: Showing all actions regardless of activity.
-            button: Filter by activity
-        modal:
-            clearButton: Show all activities
-    modal:
-        title: Filter by activity
-        closeButton: Filter
-        toggleActionCount: |
-            {count, plural,
-                =1 {One action}
-                other {# actions}
-            }
-    showNeed:
-        button:
-            show: Show me where I'm needed
-            hide: Show all actions
-        p: |
-            There {count, plural,
-                =1 {is currently one action}
-                other  {are currently # actions}
-            } in need of more participants
-message:
-    showNeed:
-        p: |
-            More activists are needed at {count, plural,
-                =1 {this action}
-                other {these actions}
-            }. If you don't find anything that works for you, you can
-            of course still go back and sign up for something else.
-        title: You're needed here!
-    yourActions:
-        p: |
-            This is where you keep track of where you need to be.
-            If you just signed up and change your mind, you can undo.
-            But if you have been booked and need to cancel, you must
-            contact your organization.
-        title: Your upcoming actions
+noTitle: Untitled event
+noLocation: No physical location
+booked: Booked
+button:
+  signUp: Sign up
+  undoSignUp: Undo Sign up
+currentNeed: More activists needed here
+infoButton: Info
+multiLocationLabel: |
+  {count, plural,
+      =2 {In two locations}
+      =3 {In three locations}
+      =4 {In four locations}
+      =5 {In five locations}
+      other {In # locations}
+  }
+weekDays:
+  friday: F
+  monday: M
+  saturday: S
+  sunday: S
+  thursday: T
+  tuesday: T
+  wednesday: W
+activity:
+  active:
+    p: Filtering actions by activity
+    button: Show all actions
+  inactive:
+    p: Showing all actions regardless of activity.
+    button: Filter by activity
+  modal:
+    clearButton: Show all activities
+modal:
+  title: Filter by activity
+  closeButton: Filter
+  toggleActionCount: |
+    {count, plural,
+        =1 {One action}
+        other {# actions}
+    }
+showNeed:
+  button:
+    show: Show me where I'm needed
+    hide: Show all actions
+  p: |
+    More activists are needed at {count, plural,
+        =1 {this action}
+        other {these actions}
+    }. If you don't find anything that works for you, you can
+    of course still go back and sign up for something else.
+  title: You're needed here!
+yourActions:
+  p: |
+    This is where you keep track of where you need to be.
+    If you just signed up and change your mind, you can undo.
+    But if you have been booked and need to cancel, you must
+    contact your organization.
+  title: Your upcoming actions

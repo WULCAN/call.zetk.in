@@ -1,6 +1,5 @@
-tabs:
-    instructions: Instruktioner
-    target: Personinfo
-    input: Agera som {target}
-    report: Rapport
-    stats: Bra jobbat
+instructions: Instruktioner
+target: Personinfo
+input: Agera som {target}
+report: Rapport
+stats: Bra jobbat
