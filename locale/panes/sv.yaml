@@ -1,62 +1,62 @@
 input:
-    h1: 'Agera som { target }'
-    summary:
-        campaigns:
-            actions: '{count} aktioner'
-            bookings: |-
-                {numBookings, plural,
-                    =0 {inga bokningar}
-                    =1 {en bokning}
-                    other {# bokningar}
-                }
-            h2: Aktuella kampanjer
-            respondButton: 'Anmäl'
-            responses: |-
-                {numResponses, plural,
-                    =0 {inga anmälningar}
-                    =1 {en anmälan}
-                    other {# anmälningar}
-                }
-            status: '{target} har'
-        surveys:
-            h2: Enkäter
-            respondButton: 'Svara'
-    summaryLabel: Sammanfattning
-    summaryLink: Sammanfattning
-instructions:
-    h1: Instruktioner
-    targetButton: Visa personinfo
-queueEmpty:
-    assignmentsLink: Välj ett annat uppdrag
-    h1: Slut på personer att ringa!
-    p: |-
-        Just nu finns det inga fler personer i kön. Om en stund kan det hända
-        att fler släpps på, men för tillfället kan du inte ringa mer på det
-        här uppdraget.
-report:
-    backLink: Gå tillbaka
-    h:
-        report: Rapportera in samtal
-        reported: Samtal rapporterat
-stats:
-    h1: Bra jobbat!
-    p: |
-        Din insats är viktig för att bygga din organisation
-        starkare. Här är en sammanfattning av hur det går.
-target:
-    activityHeader: Tidigare aktivitet
-    activityLabel: |-
-        {count, plural,
-            =0 {{target} har aldrig deltagit i några aktioner.}
-            =1 {{target} har delagit i en aktion, {lastAction}.}
-            other {{target} har deltagit i {count} aktioner. Den senaste var {lastAction}.}
+  h1: Agera som { target }
+  summary:
+    campaigns:
+      actions: '{count} aktioner'
+      bookings: |-
+        {numBookings, plural,
+            =0 {inga bokningar}
+            =1 {en bokning}
+            other {# bokningar}
         }
-    activityLastAction: '{activity} ({location}) {date}'
-    callLogHeader: 'Tidigare påringningar till {target}'
-    editHeader: 'Redigera informationen?'
-    editInfo: |-
-        Om något här behöver ändras, skriv ett meddelande till en funktionär
-        i rapporten efter samtalet.
-    h1: Personinfo
-    instructionsButton: Visa instruktioner
-    tagHeader: Etiketter
+      h2: Aktuella kampanjer
+      respondButton: Anmäl
+      responses: |-
+        {numResponses, plural,
+            =0 {inga anmälningar}
+            =1 {en anmälan}
+            other {# anmälningar}
+        }
+      status: '{target} har'
+    surveys:
+      h2: Enkäter
+      respondButton: Svara
+  summaryLabel: Sammanfattning
+  summaryLink: Sammanfattning
+instructions:
+  h1: Instruktioner
+  targetButton: Visa personinfo
+queueEmpty:
+  assignmentsLink: Välj ett annat uppdrag
+  h1: Slut på personer att ringa!
+  p: |-
+    Just nu finns det inga fler personer i kön. Om en stund kan det hända
+    att fler släpps på, men för tillfället kan du inte ringa mer på det
+    här uppdraget.
+report:
+  backLink: Gå tillbaka
+  h:
+    report: Rapportera in samtal
+    reported: Samtal rapporterat
+stats:
+  h1: Bra jobbat!
+  p: |
+    Din insats är viktig för att bygga din organisation
+    starkare. Här är en sammanfattning av hur det går.
+target:
+  activityHeader: Tidigare aktivitet
+  activityLabel: >-
+    {count, plural,
+        =0 {{target} har aldrig deltagit i några aktioner.}
+        =1 {{target} har delagit i en aktion, {lastAction}.}
+        other {{target} har deltagit i {count} aktioner. Den senaste var {lastAction}.}
+    }
+  activityLastAction: '{activity} ({location}) {date}'
+  callLogHeader: Tidigare påringningar till {target}
+  editHeader: Redigera informationen?
+  editInfo: |-
+    Om något här behöver ändras, skriv ett meddelande till en funktionär
+    i rapporten efter samtalet.
+  h1: Personinfo
+  instructionsButton: Visa instruktioner
+  tagHeader: Etiketter

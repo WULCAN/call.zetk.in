@@ -1,4 +1,4 @@
 dashboardLink: My Page
 user:
-    logout: Log out
-    settings: Settings
+  logout: Log out
+  settings: Settings

@@ -1,69 +1,69 @@
 action:
-    noLocation: Ingen fysisk plats
-    booked: Bokad
-    button:
-        signUp: Anmäl
-        undoSignUp: Ångra anmälan
-    currentNeed: Fler aktivister behövs här
-    infoButton: Info
-    multiLocationLabel: |
-        {count, plural,
-            =2 {På två platser}
-            =3 {På tre platser}
-            =4 {På fyra platser}
-            =5 {På fem platser}
-            other {På # platser}
-        }
+  noLocation: Ingen helt fysisk plats
+  booked: Bokad
+  button:
+    signUp: Anmäl
+    undoSignUp: Ångra anmälan
+  currentNeed: Fler aktivister behövs här
+  infoButton: Info
+  multiLocationLabel: |
+    {count, plural,
+        =2 {På två platser}
+        =3 {På tre platser}
+        =4 {På fyra platser}
+        =5 {På fem platser}
+        other {På # platser}
+    }
 calendar:
-    weekDays:
-        friday: F
-        monday: M
-        saturday: L
-        sunday: S
-        thursday: T
-        tuesday: T
-        wednesday: O
+  weekDays:
+    friday: F
+    monday: M
+    saturday: L
+    sunday: S
+    thursday: T
+    tuesday: T
+    wednesday: O
 filter:
-    activity:
-        active:
-            p: Filtrerar aktioner på aktivitet
-            button: Visa alla aktioner
-        inactive:
-            p: Visar alla aktioner oavsett aktivitet
-            button: Filtrera på aktivitet
-        modal:
-            clearButton: Visa alla aktiviteter
+  activity:
+    active:
+      p: Filtrerar aktioner på aktivitet
+      button: Visa alla aktioner
+    inactive:
+      p: Visar alla aktioner oavsett aktivitet
+      button: Filtrera på aktivitet
     modal:
-        title: Filtrera på aktivitet
-        closeButton: Filtrera
-        toggleActionCount: |
-            {count, plural,
-                =1 {En aktion}
-                other {# aktioner}
-            }
-    showNeed:
-        button:
-            show: Visa mig var jag behövs
-            hide: Visa alla aktioner
-        p: |
-            Just nu behövs det fler aktivister på {count, plural,
-                =1 {en aktion}
-                other {# aktioner}
-            }.
+      clearButton: Visa alla aktiviteter
+  modal:
+    title: Filtrera på aktivitet
+    closeButton: Filtrera
+    toggleActionCount: |
+      {count, plural,
+          =1 {En aktion}
+          other {# aktioner}
+      }
+  showNeed:
+    button:
+      show: Visa mig var jag behövs
+      hide: Visa alla aktioner
+    p: |
+      Just nu behövs det fler aktivister på {count, plural,
+          =1 {en aktion}
+          other {# aktioner}
+      }.
 message:
-    showNeed:
-        p: |
-            På {count, plural,
-                =1 {den här aktionen}
-                other {de här aktionerna}
-            } behövs fler aktivister just nu. Om du inte hittar någon som
-            passar kan du så klart ändå gå tillbaka och anmäla dig till något
-            annat.
-        title: Du behövs här!
-    yourActions:
-        p: |
-            Här håller du koll på var du ska vara framöver. Om
-            du nyligen anmält dig kan du ångra din anmälan, men
-            när du blivit inbokad måste du kontakta din organisation
-            om du behöver ställa in.
-        title: Dina aktuella aktioner
+  showNeed:
+    p: |
+      På {count, plural,
+          =1 {den här aktionen}
+          other {de här aktionerna}
+      } behövs fler aktivister just nu. Om du inte hittar någon som
+      passar kan du så klart ändå gå tillbaka och anmäla dig till något
+      annat.
+    title: Du behövs här!
+  yourActions:
+    p: |
+      Här håller du koll på var du ska vara framöver. Om
+      du nyligen anmält dig kan du ångra din anmälan, men
+      när du blivit inbokad måste du kontakta din organisation
+      om du behöver ställa in.
+    title: Dina aktuella aktioner
