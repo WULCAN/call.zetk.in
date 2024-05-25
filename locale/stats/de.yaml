@@ -1,3 +1,5 @@
-calls_made: Getätigte Anrufe
-calls_reached: Erfolgreiche Anrufe
-target_size: '{number, plural, =1 { Zielperson } other { Zielpersonen }} in der Zielgruppe'
+stats:
+  calls_made: Getätigte Anrufe
+  calls_reached: Erfolgreiche Anrufe
+  target_size: '{number, plural, =1 { Zielperson } other { Zielpersonen }} in der
+    Zielgruppe'

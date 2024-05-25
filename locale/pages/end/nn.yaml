@@ -1,4 +1,6 @@
-assignmentsButton: Hald fram å ringe
-dashboardButton: Gå til mi side
-h: Takk for at du ringde
-p: Arbeidet ditt er viktig for å bygge ein sterkare organisasjon.
+pages:
+  end:
+    assignmentsButton: Hald fram å ringe
+    dashboardButton: Gå til mi side
+    h: Takk for at du ringde
+    p: Arbeidet ditt er viktig for å bygge ein sterkare organisasjon.

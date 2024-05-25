@@ -1,6 +1,8 @@
-tabs:
-    instructions: Rettleiing
-    target: Personleg info
-    input: 'Agér som {target}'
-    report: Rapportér
-    stats: Godt jobba!
+pages:
+  call:
+    tabs:
+      instructions: Rettleiing
+      target: Personleg info
+      input: Agér som {target}
+      report: Rapportér
+      stats: Godt jobba!

@@ -1,6 +1,8 @@
-tabs:
-    instructions: Instructions
-    target: Personal info
-    input: Act as {target}
-    report: Report
-    stats: Good work
+pages:
+  call:
+    tabs:
+      instructions: Instructions
+      target: Personal info
+      input: Act as {target}
+      report: Report
+      stats: Good work

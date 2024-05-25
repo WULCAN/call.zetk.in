@@ -1,2 +1,3 @@
-select:
+surveyForm:
+  select:
     default: Velg et alternativ

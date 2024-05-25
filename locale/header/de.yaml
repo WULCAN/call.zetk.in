@@ -1,4 +1,5 @@
-dashboardLink: Meine Seite
-user:
+header:
+  dashboardLink: Meine Seite
+  user:
     logout: Ausloggen
     settings: Einstellungen

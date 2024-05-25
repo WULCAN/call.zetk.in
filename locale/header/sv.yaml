@@ -1,4 +1,5 @@
-dashboardLink: Min sida
-user:
+header:
+  dashboardLink: Min sida
+  user:
     logout: Logga ut
     settings: Inställningar

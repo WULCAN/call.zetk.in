@@ -1,4 +1,6 @@
-assignmentsButton: Weiter anrufen
-dashboardButton: Gehe zu Meine Seite
-h: Danke fürs Telefonieren
-p: Dein Beitrag ist entscheidend, um eine starke LINKE aufzubauen.
+pages:
+  end:
+    assignmentsButton: Weiter anrufen
+    dashboardButton: Gehe zu Meine Seite
+    h: Danke fürs Telefonieren
+    p: Dein Beitrag ist entscheidend, um eine starke LINKE aufzubauen.

@@ -1,2 +1,3 @@
-select:
+surveyForm:
+  select:
     default: Vælg et alternativ

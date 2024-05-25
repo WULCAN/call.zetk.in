@@ -1,3 +1,5 @@
-h1: Velkomen
-intro: Dette er brukar
-loginButton: Logg inn
+pages:
+  landing:
+    h1: Velkomen
+    intro: Dette er brukar
+    loginButton: Logg inn

@@ -1,3 +1,4 @@
-calls_made: ringda samtal
-calls_reached: lyckade samtal
-target_size: '{number, plural, =1 { person } other { personer }} i målgruppen'
+stats:
+  calls_made: ringda samtal
+  calls_reached: lyckade samtal
+  target_size: '{number, plural, =1 { person } other { personer }} i målgruppen'

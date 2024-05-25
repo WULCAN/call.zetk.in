@@ -1,4 +1,5 @@
-dashboardLink: Min side
-user:
+header:
+  dashboardLink: Min side
+  user:
     logout: Log ud
     settings: Indstillinger
