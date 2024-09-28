@@ -1,5 +1,4 @@
 h1: Velkommen
-intro: >-
-    Dette er Zetkins brugerflade til rundringere. For at kunne ringe, skal du
-    være logget ind.
+intro: Dette er Zetkins brugerflade til rundringere. For at kunne ringe, skal du
+  være logget ind.
 loginButton: Log ind

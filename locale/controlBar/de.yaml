@@ -3,12 +3,12 @@ callButton: Anruf starten
 endButton: Anrufen beenden
 finishCallButton: Beenden & berichten
 instructions:
-    prepare: Auf den Anruf vorbereiten
+  prepare: Auf den Anruf vorbereiten
 nextCallButton: Weiter anrufen
 skipButton: Überspringen
 startButton: Anrufen beginnen
 submitReportButton: Bericht abschicken
 targetInfo:
-    lastFailure: Zuletzt versucht am {date}
-    lastNever: Bisher nicht versucht
-    lastSuccessful: Zuletzt erreicht am {date}
+  lastFailure: Zuletzt versucht am {date}
+  lastNever: Bisher nicht versucht
+  lastSuccessful: Zuletzt erreicht am {date}
